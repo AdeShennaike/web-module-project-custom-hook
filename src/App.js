@@ -6,7 +6,7 @@ import useDarkMode from './components/hooks/useDarkMode';
 import "./style.css";
 
 const App = () => {
-  const [coinData, darkMode, setDarkMode] = useDarkMode('');
+  const [darkMode, setDarkMode, coinData] = useDarkMode();
 
   return (
     <div className={darkMode ? "dark-mode App" : "App"}>
